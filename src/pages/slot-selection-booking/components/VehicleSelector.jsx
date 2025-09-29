@@ -283,7 +283,7 @@ const VehicleSelector = ({ onVehicleChange }) => {
 
             {isTypeOpen && (
               <div className="absolute left-0 right-0 top-full mt-1 z-[101]
-                            bg-white border-2 border-primary/30 rounded-lg shadow-2xl
+                            bg-card border-2 border-primary/30 rounded-lg shadow-2xl
                             max-h-48 overflow-y-auto"
                    style={{
                      position: 'absolute',
@@ -296,10 +296,10 @@ const VehicleSelector = ({ onVehicleChange }) => {
                     key={type}
                     type="button"
                     onClick={() => handleTypeSelect(type)}
-                    className="w-full px-3 py-2.5 text-left text-sm font-medium text-foreground
-                             hover:bg-primary/5 hover:text-primary transition-colors duration-150
+                    className="w-full px-3 py-2.5 text-left text-sm font-medium text-card-foreground
+                             hover:bg-primary/10 hover:text-primary transition-colors duration-150
                              border-b border-border/50 last:border-b-0
-                             min-h-[40px] flex items-center"
+                             min-h-[40px] flex items-center bg-card"
                   >
                     {type}
                   </button>
@@ -342,7 +342,7 @@ const VehicleSelector = ({ onVehicleChange }) => {
 
               {isModelOpen && vehicleModels[selectedType] && (
                 <div className="absolute left-0 right-0 top-full mt-1 z-[91]
-                              bg-white border-2 border-primary/30 rounded-lg shadow-2xl
+                              bg-card border-2 border-primary/30 rounded-lg shadow-2xl
                               max-h-64 overflow-y-auto"
                      style={{
                        position: 'absolute',
@@ -355,10 +355,10 @@ const VehicleSelector = ({ onVehicleChange }) => {
                       key={model}
                       type="button"
                       onClick={() => handleModelSelect(model)}
-                      className="w-full px-4 py-3.5 text-left text-sm font-semibold text-foreground
-                               hover:bg-primary/5 hover:text-primary transition-colors duration-150
+                      className="w-full px-4 py-3.5 text-left text-sm font-semibold text-card-foreground
+                               hover:bg-primary/10 hover:text-primary transition-colors duration-150
                                border-b border-border/50 last:border-b-0
-                               min-h-[48px] flex items-center"
+                               min-h-[48px] flex items-center bg-card"
                     >
                       {model}
                     </button>
